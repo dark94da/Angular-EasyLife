@@ -1,0 +1,54 @@
+<!--The content below is only a placeholder and can be replaced.-->
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        <div style="float: left; width: 14.6%; height: 50px;"></div>
+        <div class="navbar-header" style="width: 23.6%">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span></button>
+          <a class="navbar-brand" href="#">易活</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li routerLinkActive="active">
+              <a routerLink="/home" href="#">首页</a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/search" href="#">信息查找</a>
+            </li>
+            <li dropdown routerLinkActive="active">
+              <a dropdownToggle class="dropdown-toggle no-href">信息发布
+                 <span class="caret"></span>
+              </a>
+              <ul *dropdownMenu class="dropdown-menu" role="menu">
+                <li role="menuitem"><a class="dropdown-item" routerLink="/post/carpool" href="#">Carpool</a></li>
+                <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+                <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+                <li class="divider dropdown-divider"></li>
+                <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+                </li>
+              </ul>
+            </li>
+            <li *ngIf="isLoggedIn" routerLinkActive="active">
+              <a routerLink="/user" href="#">个人中心</a>
+            </li>
+          </ul>
+          <div class="pull-right" style="width: 14.6%; height: 50px;"></div>
+          <ul class="nav navbar-nav navbar-right">
+            <li *ngIf="isLoggedIn">
+              <p class="navbar-text">Hi, {{username}}</p>
+            </li>
+            <li *ngIf="isLoggedIn">
+              <a class="no-href" (click)="logout()">[退出]</a>
+            </li>
+            <li *ngIf="!isLoggedIn" routerLinkActive="active">
+              <a class="no-href" routerLink="/login">登录</a>
+            </li>
+            <li *ngIf="!isLoggedIn" routerLinkActive="active">
+              <a class="no-href" routerLink="/signup">注册</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+

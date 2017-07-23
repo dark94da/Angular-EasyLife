@@ -1,0 +1,33 @@
+<div class="main-full">
+  <div style="margin-left: auto; margin-right: auto; width: 300px;">
+    <div style="text-align: center; padding-top: 20px;">
+        <img src="../../assets/logo.png"><br>
+        <h2 style="color: #cccccc;">用户登录</h2>
+    </div>
+    <div class="my-form">
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit()" style="width:150px; margin-left: auto; margin-right: auto;">
+          <div class="form-group">
+          <md-input-container>
+            <input mdInput type="email" [(ngModel)]="username" name="username" placeholder="用户名(注册邮箱)">
+          </md-input-container>
+          </div>
+          <div class="form-group">
+            <md-input-container>
+              <input mdInput type="password" [(ngModel)]="password" name="password" placeholder="密码">
+            </md-input-container>
+          </div>
+          <div class="form-group">
+            <button md-raised-button type="submit">登录</button>
+          </div>
+          <hr>
+          <div class="form-group">
+            没有账户？<a class="no-href" (click)="navToSignUp()">快速注册</a>
+          </div>
+        </form>
+    </div>
+    <div *ngIf="error_msg" style="margin-top: 20px;">
+      <alert type="danger" dismissible="true">{{ error_msg }}</alert>
+    </div>
+  </div>
+
+</div>
