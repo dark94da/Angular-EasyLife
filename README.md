@@ -1,4 +1,5 @@
-https://img.shields.io/travis/rust-lang/rust.svg https://img.shields.io/hexpm/l/plug.svg
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://github.com/dark94da/Angular-EasyLife)
+
 # Anuglar-EasyLife
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
