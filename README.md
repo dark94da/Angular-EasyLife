@@ -1,4 +1,6 @@
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://github.com/dark94da/Angular-EasyLife)
+![](https://img.shields.io/badge/language-TypeScript-orange.svg)
+[![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)]()
 
 # Anuglar-EasyLife
 
