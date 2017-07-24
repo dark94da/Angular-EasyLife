@@ -1,6 +1,6 @@
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)](https://github.com/dark94da/Angular-EasyLife)
 ![](https://img.shields.io/badge/language-TypeScript-orange.svg)
-[![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)]()
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 # Anuglar-EasyLife
 
